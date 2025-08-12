@@ -1,7 +1,7 @@
 const express = require('express');
-const app = express()
+const router = express.Router()
 
-Router.router('/').get((req, res) => {
+router.route('/').get((req, res) => {
     res.send('all items')
 })
 
